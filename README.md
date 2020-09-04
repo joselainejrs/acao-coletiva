@@ -32,7 +32,7 @@ $ npm init -y
 $ npm install express nodemon cors
 
 ```
-######  Installing depencies
+######  Sql
 
 ```
 $ npm install knex
