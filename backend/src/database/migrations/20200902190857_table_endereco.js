@@ -8,6 +8,11 @@ exports.up = function(knex) {
         table.string('cidade').notNullable();
         table.string('estado').notNullable();
 
+        table.integer('dados_id')
+        .notNullable()
+        .references('id')
+        .inTable('dados_pessoais');
+
       })
   
 };
