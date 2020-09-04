@@ -23,9 +23,8 @@ a{
 }
 
 #container main{
-    width: 1127px;
+    width: 1400px;
     height: 600px;
-
 
     border-radius: 15px;
 
@@ -38,25 +37,26 @@ a{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 5%;
    
+    padding-top: 35px
 }
 
-#container main .content .coletivo {
-    margin: auto;
+#container main .content .coletiva{
+    margin-left: 60px;
 }
 
  #container main .content span{
     border: 1px solid #DDEAEE;
     height: 465px;
-
-    margin-top: 10px;
 }
 
 
-#container main .content section .txt-titulo{
-    
+#container main .content section{
+    width: 510px;
+    margin:auto ;
+}
 
+#container main .content section .txt-titulo{
     color: var(--color-font-primary);;
 }
 
@@ -70,7 +70,7 @@ a{
     font-weight: 400;
     font-size: 3rem;
 
-    width: 495px;
+    width: 500px;
 
     text-align: center;
 
@@ -106,5 +106,5 @@ a{
 
     float: right;
     
-    margin-top: 10px;
+    margin-top: 20px;
 } 
