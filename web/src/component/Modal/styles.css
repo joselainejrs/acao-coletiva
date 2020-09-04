@@ -1,0 +1,148 @@
+#modal{
+    width: 100%;
+    height:100vh;
+
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index:10;
+    background: rgba(0, 0, 0, 0.35);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page-modal{
+    background: var(--color-box-secondary);
+
+    border-radius: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+
+}
+
+#page-modal .btnclose{
+    background: transparent;
+    outline: none;
+    border: none;
+
+    font-size: 5rem;
+    font-weight: 600;
+    font-family: 'Dosis', sans-serif;
+
+    color: var(--color-font-content);
+
+    cursor: pointer;
+
+    margin-left:10px ;
+
+    position: relative;
+    bottom: 26rem;
+
+    /* fechar */
+    
+
+}
+
+#page-modal #container{
+    width: 524px;
+    height: 620px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: auto;
+}
+
+#page-modal #container form {
+    width: 500px;
+    
+
+}
+#page-modal #container form .text-modal{
+    color: var(--color-font-content);
+
+    margin-bottom: 15px;
+}
+
+
+input[type=text] {
+    border: none;
+    background: none;
+    border-bottom: 2px solid #1C6CB6;
+    margin:5px ;
+
+}
+
+::-webkit-input-placeholder { 
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 2.5rem;
+    color:var(--color-font-content);
+}
+
+#page-modal #container form .input-dados{
+    /* margin-left: 10px; */
+    width: 223px;
+    height: 41px;
+    
+    font-weight: 500;
+    font-size: 2.5rem;
+    font-family: 'Darker Grotesque', sans-serif;
+    
+}
+
+#page-modal #container form h3{
+    font-size: 2.4rem;
+    font-family: 'Dosis', sans-serif;
+
+    color: var(--color-font-content);
+    
+    margin: 20px 0;
+}
+
+
+#page-modal #container form .input-d-e{
+    width: 455px;
+    height: 41px;
+
+    font-weight: 500;
+    font-size: 2.5rem;
+    font-family: 'Darker Grotesque', sans-serif;
+}
+
+#page-modal #container form .input-d-e-c{
+    width: 145px;
+    height: 41px;
+
+    font-weight: 500;
+    font-size: 2.5rem;
+    font-family: 'Darker Grotesque', sans-serif;
+}
+
+#page-modal #container form .btnModal{
+    background: var(--color-btn-modal);
+
+    border: none;
+    border-radius: 10px;
+
+    width: 290px;
+    height: 60px;
+
+    cursor: pointer;
+
+    font-size: 3.6rem;
+    font-weight: 600;
+    font-family: 'Dosis', sans-serif;
+
+    color: var(--color-font-primary);
+
+    position: relative;
+    left: 8rem;
+
+    margin-top:4.5rem;
+
+}

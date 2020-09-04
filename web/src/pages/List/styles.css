@@ -1,0 +1,77 @@
+#page-list{
+    width: 100vw;
+    height: 100vh;
+}
+
+#page-list main{
+    width: 1500px;
+    height: 100vh;
+
+
+    border-radius: 15px;
+
+    background: var(--color-box-primary);
+
+    margin: 110px auto;
+    
+}
+
+#page-list main .content {
+    display: block;
+    align-items: center;
+    justify-content: space-around;
+
+    color: var(--color-font-description);
+
+    margin: 50px
+   
+}
+
+#page-list main .content .text{
+    color: var(--color-font-primary);
+
+    padding: 30px 0;
+}
+
+
+#page-list main .content .description{
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 3.2rem; 
+
+    color: var(--color-font-description);
+
+    padding-bottom: 10px;
+
+}
+
+#page-list main .content table, tr{
+    width: 100%;
+
+    font-family: 'Dosis', sans-serif;
+    font-size: 2.5rem; 
+    
+    text-align: center;
+
+    margin-top: 10px;
+}
+
+#page-list main .content table tr{
+    margin-bottom: 10px;
+
+}
+
+#page-list main .content table th{
+    padding:30px;
+
+    margin-bottom: 10px;
+
+      
+    border-bottom: 1px solid #DDEAEE;
+    color: var(--color-font-primary);
+}
+
+#page-list main .content table tr td{
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}

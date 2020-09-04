@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@400;500;600&family=Dosis:wght@400;600&display=swap');
+
+:root{
+    --color-background: #DDEAEE;
+    --color-box-primary: #1C6CB6;
+    --color-box-secondary: #EABC19;
+    --color-font-primary: #EABC19;
+    --color-font-content: #1C6CB6;
+    --color-btn-home: #EABC19;
+    --color-btn-modal: #1C6CB6;
+    --color-font-description: #DDEAEE;
+
+    font-size: 60%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body, #root{
+    height: 100vh;
+}
+
+body{
+    background-color: var(--color-background);
+}
+
+h1{
+    font-size: 4rem;
+    font-weight: 600;
+    font-family: 'Dosis', sans-serif;
+
+    text-align: center;
+}
+
+
+#root{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media(min-width: 700px){
+    :root{
+        font-size:62.5%;
+    }
+}
+
