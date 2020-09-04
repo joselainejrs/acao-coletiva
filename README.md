@@ -47,5 +47,3 @@ $ npm start
 Projeto desenvolvido por: Joselaine Romão Soares
 </h4>
 
-![Imagem]()
-
