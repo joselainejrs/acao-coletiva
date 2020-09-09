@@ -92,7 +92,7 @@ const Modal = ({ onClose = () => {} } ) => {
                         type="text" 
                         name="cpf"
                         value={cpf}
-                        onChange={e => setCpf(e.target.value)}
+                        onChange={e => setCpf(mask(unMask(e.target.value), ['999.999.999-99']) )}
                         placeholder="CPF" 
                         className="input-dados"
                         required
@@ -144,7 +144,8 @@ const Modal = ({ onClose = () => {} } ) => {
                         type="text" 
                         name="cep"
                         value={cep} 
-                        onChange={e => setCep(e.target.value)}
+                        onChange={e => setCep(mask(unMask(e.target.value), ['99999-999']) )}
+                        maxLength="9"
                         placeholder="CEP"
                         className="input-d-e-c"
                         required

@@ -15,14 +15,15 @@ import '../../assets/styles/global.css';
 export default function Home(){
 
         //contagem de apoiadores
-        // const [totalApoiadores, setTotalApoiadores] = useState(0);
+        const [totalApoiadores, setTotalApoiadores] = useState(0);
 
-        // useEffect(() => {
-        //     api.get('apoiadores').then(response =>{
+        useEffect(() => {
+            api.get('apoiadores').then(response =>{
 
-        //         return response.json(setTotalApoiadores);
-        //  })
-        // }, [])
+                setTotalApoiadores(response.data)
+                // return response.json(setTotalApoiadores);
+         })
+        }, [])
 
         //modal
         const [isModalVisible, setIsModalVisible] = useState(false);
@@ -59,7 +60,7 @@ export default function Home(){
 
                             <div>
                                 <p className="total">
-                                    Total de apoiadores {1}
+                                    Total de apoiadores {totalApoiadores || 0}
                                 </p>
                             </div>
                         </section>
