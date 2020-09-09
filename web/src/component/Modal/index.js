@@ -2,6 +2,8 @@ import React, {useState} from 'react';
 
 import api from '../../services/api'
 
+import {mask, unMask} from 'remask';
+
 //css
 import './styles.css';
 import '../../assets/styles/global.css';
@@ -21,6 +23,10 @@ const Modal = ({ onClose = () => {} } ) => {
     const [complemento, setComplemento] = useState('');
     const [cidade, setCidade] = useState('');
     const [estado, setEstado] = useState('');
+
+    // calculo de apoiadores
+    const [count, setCount] = useState(0);
+
 
     async function handleCadastro(){
 
@@ -93,7 +99,7 @@ const Modal = ({ onClose = () => {} } ) => {
                     />
 
                     <input 
-                        type="text" 
+                        type="date" 
                         name="data_nascimento"
                         value={data_nascimento}
                         onChange={e => setData_nascimento(e.target.value)}
@@ -115,7 +121,7 @@ const Modal = ({ onClose = () => {} } ) => {
                     />
 
                     <input 
-                        type="text" 
+                        type="number" 
                         name="numero"
                         value={numero} 
                         onChange={e => setNumero(e.target.value)}
@@ -159,6 +165,7 @@ const Modal = ({ onClose = () => {} } ) => {
                         name="estado" 
                         value={estado}
                         onChange={e => setEstado(e.target.value)} 
+                        maxLength="2"
                         placeholder="Estado"
                         className="input-d-e-c"
                         required
@@ -166,6 +173,7 @@ const Modal = ({ onClose = () => {} } ) => {
 
                     <button 
                         type="submit"
+                        onClick={() => setCount(count + 1)}
                         className="btnModal"
                         >
                         Cadastrar

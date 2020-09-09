@@ -11,17 +11,6 @@ header{
     padding: 2rem;
 }
 
-a{
-    text-decoration: none;
-
-    font-size: 3.6rem;
-    font-weight: 600;
-    font-family: 'Dosis', sans-serif;
-
-    color: var(--color-font-primary);
-
-}
-
 #container main{
     width: 1400px;
     height: 600px;
@@ -42,7 +31,7 @@ a{
 }
 
 #container main .content .coletiva{
-    margin-left: 60px;
+    margin-left: 80px;
 }
 
  #container main .content span{
@@ -54,6 +43,38 @@ a{
 #container main .content section{
     width: 510px;
     margin:auto ;
+}
+
+a{
+    text-decoration: none;
+
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: 'Dosis', sans-serif;
+
+     line-height: 80px;
+
+    color: var(--color-font-content);
+}
+
+#container main .content section .txt-description{
+    text-align: center;
+
+    margin-bottom: 76px;
+
+    background: var( --color-btn-home-description);
+
+    border: none;
+    border-radius: 10px;
+
+    width: 347px;
+    height: 80px;
+
+    cursor: pointer;
+
+    position: relative;
+    left: 6rem;
+
 }
 
 #container main .content section .txt-titulo{

@@ -7,9 +7,10 @@
     --color-font-primary: #EABC19;
     --color-font-content: #1C6CB6;
     --color-btn-home: #EABC19;
+    --color-btn-home-description: #DDEAEE;
     --color-btn-modal: #1C6CB6;
     --color-font-description: #DDEAEE;
-
+    
     font-size: 60%;
 }
 

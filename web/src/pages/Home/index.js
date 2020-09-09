@@ -30,7 +30,6 @@ export default function Home(){
         return(
             <div id="container">
                 <header>
-                    <Link to="/list">Apoiadores</Link>
                     <img src={logoImg} alt="Logo"/>
                 </header>
 
@@ -38,6 +37,9 @@ export default function Home(){
                     <div className="content">
                         <section>
                             <img src={photoImg} alt=" Ação Coletiva"  align="center"  className="coletiva"/>
+                            <div className="txt-description">
+                            <Link to="/list">Conheça os apoiadores</Link>
+                            </div>                          
                         </section>
                         <span></span>
                         <section>
