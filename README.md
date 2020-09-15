@@ -43,6 +43,8 @@ $ npm install sqlite3
 $ npm start 
 ```
 
+![Imagem](https://github.com/joselainejrs/acao-coletiva/blob/master/web/src/assets/capa.png)
+
 <h4 align="center">
 Projeto desenvolvido por: Joselaine Romão Soares
 </h4>
